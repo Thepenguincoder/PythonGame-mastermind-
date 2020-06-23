@@ -35,6 +35,11 @@ def geefFeedback(gok, geheimeCode):
       if gok[gokLetter] == copieGok[codeLetter]:
         feedback.append("W")
         copieGok[codeLetter] = "X"
+  
+  if len(feedback) == 0:
+    return "Helaas, geen van de geraden getallen komen voor in de geheime code."
+  else:
+    return "".join(feedback)
 
 
 #aantal variabelen vaststellen

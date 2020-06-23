@@ -41,7 +41,19 @@ def geefFeedback(gok, geheimeCode):
   else:
     return "".join(feedback)
 
+#Vraagt de speler of ze opnieuw willen spelen
+def speelOpnieuw():
+  while True:
+    opnieuw = input("Wil je nog een ronde spelen? (ja of nee)\n").lower()  
+    if opnieuw == "nee":
+      return False
+    elif opnieuw != "ja":
+      print("Zeg ja of nee alstublieft")
+    else:
+      return True
+
 
 #aantal variabelen vaststellen
 aantal_kleuren = 4
+aantal_beurten = 10
 kleuren = ["r", "b", "g", "c", "p", "m"]

@@ -10,6 +10,10 @@ def maakGeheimeCode(kleuren):
   
   return geheimeCode
 
+#geeft feedback
+def geefFeedback(gok, geheimeCode):
+  if gok == geheimeCode:
+    return "Je hebt de geheime code geraden!"
 
 #aantal variabelen vaststellen
 kleuren = ["r", "b", "g", "c", "p", "m"]

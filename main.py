@@ -57,3 +57,16 @@ def speelOpnieuw():
 aantal_kleuren = 4
 aantal_beurten = 10
 kleuren = ["r", "b", "g", "c", "p", "m"]
+
+print('''WELCOME TO MASTERMIND!
+In dit spel kiest de computer een code van %s letters, elke letter representeerd een kleur
+R = rood   B = blauw   G = groen   C = citroengeel   P = paars   M = magenta
+De computer mag dezelfde kleur vaker kiezen
+
+Jouw doel als speler is om de code te raden, dit doe je een code van letters te gokken.
+Je krijgt feedback over hoeverre de geraden code overeenkomt met de werkelijke code
+Elke Z betekend de juiste kleur op de juiste plek
+Elde W betekend een juiste kleur maar op de verkeerde plek
+Deze feedback is niet op volgorde
+
+Voorbeeld: ZZW betekend twee kleuren op de juiste plek en een kleur die in de code voorkomt maar niet op de juiste plek zit.\n''' % (aantal_kleuren))

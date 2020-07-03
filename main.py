@@ -97,4 +97,15 @@ while True:
     print(geefFeedback(gok, geheimeCode))
     beurt += 1
 
-   
+    if gok == geheimeCode:
+      #Felicitatie bericht zit in de functie geef feedback
+      break
+
+  if beurt > aantal_beurten:
+    print("Je hebt verloren")
+    print("de geheime code was: %s" % (geheimeCode))
+  
+  if speelOpnieuw() == False:
+    break
+  else:
+    os.system('cls' if os.name == 'nt' else 'clear')

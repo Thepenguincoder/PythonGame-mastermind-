@@ -58,12 +58,14 @@ aantal_kleuren = 4
 aantal_beurten = 10
 kleuren = ["r", "b", "g", "c", "p", "m"]
 
+
+#Regel tekst
 print('''WELCOME TO MASTERMIND!
 In dit spel kiest de computer een code van %s letters, elke letter representeerd een kleur
 R = rood   B = blauw   G = groen   C = citroengeel   P = paars   M = magenta
-De computer mag dezelfde kleur vaker kiezen, ofwel een combinatie van 4 dezelfde letters is mogelijk
+De computer mag dezelfde kleur vaker kiezen
 
-Jouw doel als speler is om de code te raden, dit doe je door middel van een code van letters te gokken.
+Jouw doel als speler is om de code te raden, dit doe je door een code bestaande uit letters te raden
 Je krijgt feedback over hoeverre de geraden code overeenkomt met de werkelijke code
 Elke Z betekend de juiste kleur op de juiste plek
 Elde W betekend een juiste kleur maar op de verkeerde plek
